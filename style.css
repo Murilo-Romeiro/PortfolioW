@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 35px;
+
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.ucs {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.botao-uc {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.botao-uc:hover {
+    background-color: #800080;
+}
+
+section {
+    padding: 20px;
+    background-color: #2e2e2e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+#cronograma img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #2e2e2e;
+    color: #fff;
+    padding: 5px 0;
+    clear: both;
+}
+
+.botao-linkedin, .botao-github {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #2e2e2e;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.botao-linkedin img, .botao-github img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.botao-linkedin:hover, .botao-github:hover {
+    background-color: #1a1a1a;
+}
+
+
+/* carrossel */
+.conteudo{
+    height: 500px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.legenda{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 12px;
+    border: 2px solid #800080;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.bar:hover{
+    background-color: #800080;
+}
+
+input{
+    display: none;
+}
+
+.carrossel{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.image{
+    width: 20%;
+    transition: .5s;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#foto1:checked ~ .f1{
+    margin-right: 0;
+}
+#foto2:checked ~ .f1{
+    margin-right: -20%;
+}
+#foto3:checked ~ .f1{
+    margin-right: -40%;
+}
+#foto4:checked ~ .f1{
+    margin-right: -60%;
+}
+#foto5:checked ~ .f1{
+    margin-right: -80%;
+}
