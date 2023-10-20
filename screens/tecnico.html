@@ -6,39 +6,105 @@
     <title>Técnico</title>
     <link rel="stylesheet" href="./../style.css">
 </head>
+<style>
+    .focused{
+        background-color: #800080;
+    }
+</style>
 <body>
     <header>
         <h1>Técnico</h1>
     </header>
 
     <div class="conteudo">
-        <div class="carrossel">
+        <div class="carrossel car2">
             <input type="radio" name="foto" id="foto1" checked>
             <input type="radio" name="foto" id="foto2">
             <input type="radio" name="foto" id="foto3">
+            <input type="radio" name="foto" id="foto4">
+            <input type="radio" name="foto" id="foto5">
+            <input type="radio" name="foto" id="foto6">
+            <input type="radio" name="foto" id="foto7">
+            <input type="radio" name="foto" id="foto8">
+            <input type="radio" name="foto" id="foto9">
+            <input type="radio" name="foto" id="foto10">
 
-            <div class="image f1">
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="">
+            <div class="image image2 f1">
+                <a href="https://www.figma.com/file/yf0Kfu4laeuqpgfWEPtozL/Agenda-S?type=design&node-id=0%3A1&mode=design&t=bTlMAqodf7rGEYOl-1" target="_blank" rel="noopener noreferrer">
+                    <img src="/figma.png" alt="">
                 </a>
             </div>
-            <div class="image">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="">
+            <div class="image image2">
+                <a href="https://drive.google.com/file/d/1nHLao1sCwGl9JF1wLiMBuV6C4CQiHT8r/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <img src="/poo.png" alt="">
                 </a>
             </div>
-            <div class="image">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="">
+            <div class="image image2">
+                <a href="https://www.figma.com/proto/yf0Kfu4laeuqpgfWEPtozL/Agenda-S?type=design&node-id=29-38&t=jVHqRVWbz0ifLvlG-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=29%3A38&mode=design" target="_blank" rel="noopener noreferrer">
+                    <img src="/prototype.png" alt="">
                 </a>
             </div>
-          
+            <div class="image image2">
+                <a href="https://drive.google.com/file/d/1KG2q9oNHa0Uy6g2zu2zSxfiuihPz6iQD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <img src="/espiral.png" alt="">
+                </a>
+            </div>
+            <div class="image image2">
+             
+                    <img src="/casodeuso.PNG" alt="">
+             
+            </div>
+            <div class="image image2">
+             
+                    <img src="/modelo-logico.png" alt="">
+             
+            </div>
+            <div class="image image2">
+                <a href="https://github.com/Senai-SC-CTAI/SA_2023_3B_Agenda-S" target="_blank" rel="noopener noreferrer">
+                    <img src="/sagithub.png" alt="">
+                </a>
+            </div>
+            <div class="image image2">
+                <a href="https://drive.google.com/file/d/1irY7wP_oNYiOGpA_GkXlj7HI0ARiOip6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <img src="/virtualizacao.png" alt="">
+                </a>
+            </div>
+            <div class="image image2">
+                <a href="https://docs.google.com/document/d/1I4w4awJSkcjfcjjx1aAn7ka80AVpT03jmIevZgFmQhY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <img src="/modelofisico.png" alt="">
+                </a>
+            </div>
+            <div class="image image2">
+                <a href="https://docs.google.com/document/d/1tYqABq5EW_jiDkjrl-Ifubpj41MYyWlEvuO0gvlgTUc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <img src="/retomada.png" alt="">
+                </a>
+            </div>
+            
             <div class="legenda">
                 <label class="bar" for="foto1"></label>
                 <label class="bar" for="foto2"></label>
                 <label class="bar" for="foto3"></label>
+                <label class="bar" for="foto4"></label>
+                <label class="bar" for="foto5"></label>
+                <label class="bar" for="foto6"></label>
+                <label class="bar" for="foto7"></label>
+                <label class="bar" for="foto8"></label>
+                <label class="bar" for="foto9"></label>
+                <label class="bar" for="foto10"></label>
             </div>                                              
         </div>
     </div>
+    <script>
+        const bar = document.querySelectorAll(".bar");
+
+        for(let i = 0; i < bar.length; i++){
+            bar[i].onclick = () => {
+                for(let a = 0; a < bar.length; a++){
+                    bar[a].classList.remove("focused");
+                }
+                bar[i].classList.add("focused")
+            }
+        }
+    </script>
 </body>
 </html>

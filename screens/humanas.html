@@ -6,6 +6,11 @@
     <title>Humanas</title>
     <link rel="stylesheet" href="./../style.css">
 </head>
+<style>
+    .focused{
+        background-color: #800080;
+    }
+</style>
 <body>
     <header>
         <h1>Humanas</h1>
@@ -41,6 +46,18 @@
             </div>                                              
         </div>
     </div>
+    <script>
+        const bar = document.querySelectorAll(".bar");
+
+        for(let i = 0; i < bar.length; i++){
+            bar[i].onclick = () => {
+                for(let a = 0; a < bar.length; a++){
+                    bar[a].classList.remove("focused");
+                }
+                bar[i].classList.add("focused")
+            }
+        }
+    </script>
 
 </body>
 </html>

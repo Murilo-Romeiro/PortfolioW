@@ -6,6 +6,11 @@
     <title>Natureza</title>
     <link rel="stylesheet" href="./../style.css">
 </head>
+<style>
+    .focused{
+        background-color: #800080;
+    }
+</style>
 <body>
     <header>
         <h1>Natureza</h1>
@@ -23,8 +28,8 @@
                 </a>
             </div>
             <div class="image">
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="/eletroima.png" alt="">
+                <a href="https://docs.google.com/document/d/1ETsYzyGBSX6OP5cy1N875SmkBeKEtmtV6JLgkp8emog/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <img src="/resistores.jpg" alt="">
                 </a>
             </div>
             <div class="image">
@@ -40,6 +45,18 @@
             </div>                                              
         </div>
     </div>
+    <script>
+        const bar = document.querySelectorAll(".bar");
+
+        for(let i = 0; i < bar.length; i++){
+            bar[i].onclick = () => {
+                for(let a = 0; a < bar.length; a++){
+                    bar[a].classList.remove("focused");
+                }
+                bar[i].classList.add("focused")
+            }
+        }
+    </script>
 
 </body>
 </html>
