@@ -186,3 +186,6 @@ input{
 #foto10:checked ~ .f1{
     margin-right: -90%;
 }
+#foto11:checked ~ .f1{
+    margin-right: -100%;
+}
