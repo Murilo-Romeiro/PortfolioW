@@ -140,16 +140,12 @@ input{
     width: 500%;
     height: 100%;
 }
-.car2{
-    width: calc(100% * 10)!important;
-}
+
 .image{
     width: 20%;
     transition: .5s;
 }
-.image2{
-    width: 10%!important;
-}
+
 .image img{
     width: 100%;
     height: 100%;
@@ -160,32 +156,285 @@ input{
     margin-right: 0;
 }
 #foto2:checked ~ .f1{
-    margin-right: -10%;
-}
-#foto3:checked ~ .f1{
     margin-right: -20%;
 }
-#foto4:checked ~ .f1{
-    margin-right: -30%;
-}
-#foto5:checked ~ .f1{
+#foto3:checked ~ .f1{
     margin-right: -40%;
 }
-#foto6:checked ~ .f1{
-    margin-right: -50%;
-}
-#foto7:checked ~ .f1{
+#foto4:checked ~ .f1{
     margin-right: -60%;
 }
-#foto8:checked ~ .f1{
-    margin-right: -70%;
-}
-#foto9:checked ~ .f1{
+#foto5:checked ~ .f1{
     margin-right: -80%;
 }
-#foto10:checked ~ .f1{
-    margin-right: -90%;
+
+
+
+/* carrossel 2 */
+
+.conteudo1{
+    height: 500px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
 }
-#foto11:checked ~ .f1{
-    margin-right: -100%;
+
+.legenda1{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 12px;
+    border: 2px solid #800080;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.bar:hover{
+    background-color: #800080;
+}
+.bar:focus{
+    background-color: #800080;
+}
+
+input{
+    display: none;
+}
+
+.carrossel1 {
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.image1{
+    width: 20%;
+    transition: .5s;
+}
+
+.image1 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#pic1:checked ~ .f1 {
+    margin-left: 0;
+}
+
+#pic2:checked ~ .f1 {
+    margin-left: -20%;
+}
+
+#pic3:checked ~ .f1 {
+    margin-left: -40%;
+}
+
+#pic4:checked ~ .f1 {
+    margin-left: -60%;
+}
+
+#pic5:checked ~ .f1 {
+    margin-left: -80%;
+}
+
+#pic6:checked ~ .f1 {
+    margin-left: -100%;
+}
+
+/* carrossel 3 */
+
+.conteudo2{
+    height: 500px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.legenda2{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 12px;
+    border: 2px solid #800080;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.bar:hover{
+    background-color: #800080;
+}
+.bar:focus{
+    background-color: #800080;
+}
+
+input{
+    display: none;
+}
+
+.carrossel2 {
+    display: flex;
+    width: 700%;
+    height: 100%;
+}
+
+.image2 {
+    width: 20%;
+    transition: .5s;
+}
+
+.image2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#ft1:checked ~ .f1 {
+    margin-left: 0;
+}
+
+#ft2:checked ~ .f1 {
+    margin-left: -20%;
+}
+
+#ft3:checked ~ .f1 {
+    margin-left: -40%;
+}
+
+#ft4:checked ~ .f1 {
+    margin-left: -60%;
+}
+
+#ft5:checked ~ .f1 {
+    margin-left: -80%;
+}
+
+#ft6:checked ~ .f1 {
+    margin-left: -100%;
+}
+
+#ft7:checked ~ .f1 {
+    margin-left: -120%;
+}
+
+/* carrossel 4 */
+
+.conteudo3{
+    height: 500px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+}
+
+.legenda3{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 12px;
+    border: 2px solid #800080;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.bar:hover{
+    background-color: #800080;
+}
+.bar:focus{
+    background-color: #800080;
+}
+
+input{
+    display: none;
+}
+
+.carrossel3 {
+    display: flex;
+    width: 1100%;
+    height: 100%;
+}
+
+.image3 {
+    width: 20%;
+    transition: .5s;
+}
+
+.image3 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#photo1:checked ~ .f1 {
+    margin-left: 0;
+}
+
+#photo2:checked ~ .f1 {
+    margin-left: -20%;
+}
+
+#photo3:checked ~ .f1 {
+    margin-left: -40%;
+}
+
+#photo4:checked ~ .f1 {
+    margin-left: -60%;
+}
+
+#photo5:checked ~ .f1 {
+    margin-left: -80%;
+}
+
+#photo6:checked ~ .f1 {
+    margin-left: -100%;
+}
+
+#photo7:checked ~ .f1 {
+    margin-left: -120%;
+}
+#photo8:checked ~ .f1 {
+    margin-left: -140%;
+}
+#photo9:checked ~ .f1 {
+    margin-left: -160%;
+}
+#photo10:checked ~ .f1 {
+    margin-left: -180%;
+}
+#photo11:checked ~ .f1 {
+    margin-left: -200%;
 }
